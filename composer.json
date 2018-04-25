@@ -1,0 +1,26 @@
+{
+	"name": "rgmongoorm/rgmongoorm",
+	"description": "curd",
+	"keywords": ["rgmongoorm"],
+	"homepage": "http://www.rgmongoorm.com/",
+	"type": "project",
+	"support": {
+        "email": "laifaluo@126.com"
+    },
+
+	"require": {
+		"php": ">=5.6.0",
+		"mongodb/mongodb": "1.1.1"
+	},
+	
+	"autoload": {
+        "psr-4": {
+            "Mongodb\\Orm\\": "src/rgmongoorm"
+        }
+    },
+
+	"config": {
+        "secure-http" : false
+    },
+	"use-include-path" : false
+}
