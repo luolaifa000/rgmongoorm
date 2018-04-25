@@ -11,6 +11,10 @@ class ComposerStaticInit6ead49227caec34c6bd87170ced5ce33
     );
 
     public static $prefixLengthsPsr4 = array (
+        'R' => 
+        array (
+            'RgMongodb\\Orm\\' => 14,
+        ),
         'M' => 
         array (
             'MongoDB\\' => 8,
@@ -18,6 +22,10 @@ class ComposerStaticInit6ead49227caec34c6bd87170ced5ce33
     );
 
     public static $prefixDirsPsr4 = array (
+        'RgMongodb\\Orm\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/src/rgmongoorm',
+        ),
         'MongoDB\\' => 
         array (
             0 => __DIR__ . '/..' . '/mongodb/mongodb/src',

@@ -15,7 +15,7 @@
 	
 	"autoload": {
         "psr-4": {
-            "Mongodb\\Orm\\": "src/rgmongoorm"
+            "RgMongodb\\Orm\\": "src/rgmongoorm"
         }
     },
 

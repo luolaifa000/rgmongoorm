@@ -8,8 +8,8 @@
  * 
  * */
  
-namespace App\Library\Base;
-use App\Library\Chaintrait\ChainTrait as ChainTrait;
+namespace RgMongodb\Orm;
+use RgMongodb\Orm\ChainTrait as ChainTrait;
 use MongoDB; 
 
 class MongoBase 

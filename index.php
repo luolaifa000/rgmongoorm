@@ -1,25 +1,28 @@
 <?php
 
-use DUMPING\PRINTING\DumpDef;
+
 require 'vendor/autoload.php';
+use RgMongodb\Orm\MongoBase;
 
 
-function luolaifa($data) 
-{
-    return $data;
-}
+define('MONGODB_CONFIG'        ,serialize(
+    [
+        'uri'           =>  'mongodb://rosegal_wr:rosegal@192.168.6.67:27017/rosegal',
+        'database'      =>  'rosegal',
+        'collectName'      =>  'GoodsOnSale',
+        'username'      =>  'rosegal_wr',
+        'password'      =>  'rosegal'
+    ]
+));
 
-$loger = new DumpDef(['channel' => 'demo', 'logPath' => 'demo.log', 'level' => 'info', 'proccessor' => 'luolaifa']);
 
-$loger->warning('this is a test');
+$loger = new MongoBase();
 
-$loger->debug('this is a test');
+$list = $loger->skip(0)
+				->limit(10)
+				->find();
 
-
-$loger->info('this is a test');
-
-$loger->notice('this is a test');
-
-$loger->error('this is a test');
+                                var_dump($list);
+                                exit();
 
 ?>
