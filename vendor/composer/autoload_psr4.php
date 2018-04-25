@@ -6,6 +6,6 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    'RgMongodb\\Orm\\' => array($baseDir . '/src/rgmongoorm'),
+    'RgMongodb\\Orm\\' => array($baseDir . '/src'),
     'MongoDB\\' => array($vendorDir . '/mongodb/mongodb/src'),
 );

@@ -24,7 +24,7 @@ class ComposerStaticInit6ead49227caec34c6bd87170ced5ce33
     public static $prefixDirsPsr4 = array (
         'RgMongodb\\Orm\\' => 
         array (
-            0 => __DIR__ . '/../..' . '/src/rgmongoorm',
+            0 => __DIR__ . '/../..' . '/src',
         ),
         'MongoDB\\' => 
         array (
