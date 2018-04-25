@@ -1,12 +1,23 @@
 {
 	"name": "rgmongoorm/rgmongoorm",
-	"description": "curd",
-	"keywords": ["rgmongoorm"],
-	"homepage": "http://www.rgmongoorm.com/",
-	"type": "project",
-	"support": {
-        "email": "laifaluo@126.com"
-    },
+	
+	"description": "asfasdfasdf",
+    "type": "library",
+    "license": "mit",
+	"authors": [
+        {
+            "name": "python.luo",
+            "email": "laifaluo@126.com"
+        }
+    ],
+	"repositories":[
+        {
+            "type":"vcs",
+            "url":"https://github.com/luolaifa000/dumping.git"
+        }
+    ],
+    "minimum-stability": "dev",
+    
 
 	"require": {
 		"php": ">=5.6.0",
