@@ -1,9 +1,6 @@
 <?php
-
-
 require 'vendor/autoload.php';
 use RgMongodb\Orm\MongoBase;
-
 
 define('MONGODB_CONFIG'        ,serialize(
     [
@@ -15,14 +12,11 @@ define('MONGODB_CONFIG'        ,serialize(
     ]
 ));
 
-
 $loger = new MongoBase();
-
 $list = $loger->skip(0)
 				->limit(10)
 				->find();
-
-                                var_dump($list);
-                                exit();
+var_dump($list);
+exit();
 
 ?>
