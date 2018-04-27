@@ -91,6 +91,7 @@ class MongoBase
     
     public function find()
     {
+
         $Cursor = $this->collection->find($this->options['where'],$this->options);
         
         $return = [];
@@ -196,6 +197,19 @@ class MongoBase
         );
         $successCount = $updateResult->getModifiedCount();
         return $successCount;
+    }
+
+
+    public function aggregate($options)
+    {
+        $cursor = $this->collection->aggregate($options);
+
+        $return = [];
+        foreach ($cursor as $document) {
+            $singleRecord = get_object_vars($document);
+            $return[] = $singleRecord;
+        }
+        return $return;
     }
     
     public function __call($method, $args)
